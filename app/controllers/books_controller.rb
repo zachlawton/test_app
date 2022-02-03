@@ -20,7 +20,6 @@ class BooksController < ApplicationController
   end
 
   def delete
-    @book.destroy
   end
 
   # POST /books or /books.json
