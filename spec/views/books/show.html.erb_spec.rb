@@ -5,7 +5,7 @@ RSpec.describe "books/show", type: :view do
     @book = assign(:book, Book.create!(
       title: "Title",
       author: "Author",
-      price: 2
+      price: "9.99"
     ))
   end
 
@@ -13,6 +13,6 @@ RSpec.describe "books/show", type: :view do
     render
     expect(rendered).to match(/Title/)
     expect(rendered).to match(/Author/)
-    expect(rendered).to match(/2/)
+    expect(rendered).to match(/9.99/)
   end
 end
